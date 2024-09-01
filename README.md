@@ -1,6 +1,4 @@
-Here's an updated README with details about the technologies used:
 
----
 
 # SmartParkingLotManagementUI
 

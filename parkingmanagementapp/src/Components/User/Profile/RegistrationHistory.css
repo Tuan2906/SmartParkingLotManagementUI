@@ -1,0 +1,193 @@
+/* Cải thiện bảng lịch sử đăng ký */
+.custom-table {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Khoảng cách phía dưới bảng */
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 16px; /* Tăng đệm cho các ô */
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #dee2e6; /* Thêm đường viền dưới cho các ô */
+}
+
+.custom-table thead {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Màu nền nhẹ cho các hàng chẵn */
+}
+
+.custom-table tbody tr:hover {
+    background-color: #e9ecef; /* Màu nền khi hover */
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-buttons .btn {
+    margin: 0;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.pdf-download-link {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.pdf-download-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.pdf-download-link:active {
+    background-color: #004080;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+    border-bottom: none; /* Bỏ đường kẻ dưới */
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+    border-top: none; /* Bỏ đường kẻ trên */
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    color: #007bff;
+    border-color: #dee2e6;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.pagination .page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+.page-item.active {
+    background-color: #007bff !important;
+    color: #fff !important;
+    border: 1px solid #007bff !important;
+}
+/* Modal Dialog */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Modal Content */
+.modal-content {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Màu nền của modal */
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #007bff; /* Màu nền của header */
+    color: #fff; /* Màu chữ của header */
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Modal Body */
+.modal-body {
+    text-align: center;
+    color: #333; /* Màu chữ của body */
+}
+
+/* Modal Footer */
+.modal-footer {
+    background-color: #f1f1f1; /* Màu nền của footer */
+    border-top: 1px solid #dee2e6;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Buttons */
+.btn-secondary {
+    background-color: #6c757d; /* Màu nền của nút Đóng */
+    color: #fff; /* Màu chữ của nút Đóng */
+    border: none;
+    padding: 10px;
+
+
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Màu nền của nút Đóng khi hover */
+}
+
+.btn-primary {
+    background-color: #28a745; /* Màu nền của nút Gửi Đánh Giá */
+    color: #fff; /* Màu chữ của nút Gửi Đánh Giá */
+    border: none;
+    padding: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Màu nền của nút Gửi Đánh Giá khi hover */
+}
+
+/* Textarea */
+textarea {
+    border: 1px solid #ced4da; /* Màu viền của textarea */
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    color: #495057; /* Màu chữ của textarea */
+    background-color: #fff; /* Màu nền của textarea */
+}
+
+textarea:focus {
+    border-color: #007bff; /* Màu viền của textarea khi focus */
+    outline: none;
+}
+

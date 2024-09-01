@@ -1,0 +1,65 @@
+/* RegistrationHistory.css */
+
+.custom-table {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 14px;
+    vertical-align: middle;
+    text-align: center;
+}
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.action-buttons .btn {
+    margin: 0; /* Đảm bảo không có khoảng cách ngoài mỗi nút */
+}
+.pdf-download-link {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: none; /* If the link is rendered as a button */
+}
+
+.pdf-download-link:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    color: white;
+}
+
+.pdf-download-link:active {
+    background-color: #004080;
+}
+.custom-table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+}

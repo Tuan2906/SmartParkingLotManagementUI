@@ -52,7 +52,7 @@ To run this project locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone [<repository-url>](https://github.com/Tuan2906/SmartParkingLotManagementU)
+   git clone https://github.com/Tuan2906/SmartParkingLotManagementUI
    ```
 
 2. **Navigate to the project directory:**

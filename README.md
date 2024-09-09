@@ -57,7 +57,9 @@ To run this project locally:
 
 2. **Navigate to the project directory:**
    ```bash
-   cd SmartParkingLotManagementUI
+   cd parkingmanagementapp
+   or
+   cd Parking_NV
    ```
 
 3. **Install the dependencies:**
@@ -71,6 +73,7 @@ To run this project locally:
    ```
 
 5. **Access the application:**
-   Open your web browser and navigate to `http://localhost:3000`.
+   Open your web browser and navigate to `http://localhost:3000` if use parkingmanagementapp .
+   Open your web browser and navigate to `http://localhost:3001` if use Parking_NV.
 
 ---

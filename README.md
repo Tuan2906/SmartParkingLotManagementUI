@@ -1,79 +1,110 @@
 
+---
 
-# SmartParkingLotManagementUI
+# Post Review Website
 
 ## Overview
 
-SmartParkingLotManagementUI is a user interface designed to manage a smart parking lot system. This UI provides features for users to find and select parking slots, make payments, view their registration history, and manage their profile information. On the staff side, the interface allows staff members to manage parking areas, view parking slot details, monitor user registration information, and process refunds.
+This project involves building a post review website where posts are reviewed and managed. The system includes both backend and frontend components to handle post moderation, user notifications, and authentication. It leverages AI for detecting sensitive content and provides a user-friendly interface for both administrators and end-users.
 
 ## Features
 
-### For Users:
-1. **Search for Parking Slots:**  
-   Easily find available parking slots within the parking area.
+### Backend
+The backend provides functionalities such as:
+- **Check Sensitive Words:** Uses AI to detect and flag sensitive words or content in posts.
+- **Update Post Status:** API endpoints for updating the status of posts (e.g., pending, approved, rejected).
+- **Send Notification Emails:** Sends notification emails to users when their posts are reviewed or require action.
+- **Authentication & Authorization:** Manages login functionality with different roles and permissions for employees.
 
-2. **Select Parking Slot:**  
-   Choose a desired parking slot based on availability and location.
+**Technology Used:**
+- **Framework:** Django Rest Framework
+- **AI Integration:** scikit-learn, joblib, pandas
 
-3. **Payment:**  
-   Secure and quick payment options for reserving a parking slot.
+### Frontend
+The frontend provides:
+- **Post Review Interface:** Allows users to automatically check posts with AI, approve or reject posts, and view detailed information about posts.
+- **Login Interface:** Enables users to log in to the system securely.
 
-4. **Registration History:**  
-   View and manage your past parking reservations and their details.
+**Technology Used:**
+- **Framework:** ReactJS
 
-5. **User Profile Management:**  
-   Update and manage user profile information such as contact details, vehicle information, etc.
+## Installation
 
-### For Staff:
-1. **Parking Lot Management Interface:**  
-   Manage the overall layout and configuration of the parking lot.
+### Backend
 
-2. **Parking Area Management Interface:**  
-   Organize and maintain different sections or zones within the parking lot.
-
-3. **Parking Slot Management Interface:**  
-   View, update, and manage individual parking slot details.
-
-4. **User Registration Information:**  
-   Access and manage user parking reservations and registration details.
-
-5. **Process Refunds:**  
-   Handle refund requests from users for canceled reservations or other scenarios.
-
-## Technology Stack
-
-- **React.js:** The primary framework used for building the user interface components and managing state within the application.
-- **JavaScript:** Used extensively throughout the application for handling logic, API calls, and interactive features.
-- **APIs:** All functionalities in the SmartParkingLotManagementUI are powered by API calls, ensuring seamless communication between the UI and the backend services for real-time data updates and transactions.
-
-## Getting Started
-
-To run this project locally:
-
-1. **Clone the repository:**
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Tuan2906/SmartParkingLotManagementUI
+   git clone https://github.com/Tuan2906/XetDuyetBaiDang.git
+   ```
+2. **Navigate to the Backend Directory:**
+   ```bash
+   cd shareJourneyProject
+   ```
+3. **Create and Activate a Virtual Environment:**
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows: env\Scripts\activate
+   ```
+4. **Install the Required Packages:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. **Apply Migrations and Start the Server:**
+   ```bash
+   python manage.py migrate
+   python manage.py runserver
    ```
 
-2. **Navigate to the project directory:**
-   ```bash
-   cd parkingmanagementapp
-   or
-   cd Parking_NV
-   ```
+### Frontend
 
-3. **Install the dependencies:**
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Tuan2906/XetDuyetBaiDang.git
+   ```
+2. **Navigate to the Frontend Directory:**
+   ```bash
+   cd XetDuyetPost
+   ```
+3. **Install the Required Packages:**
    ```bash
    npm install
    ```
-
-4. **Start the development server:**
+4. **Start the Development Server:**
    ```bash
    npm start
    ```
 
-5. **Access the application:**
-   Open your web browser and navigate to `http://localhost:3000` if use parkingmanagementapp .
-   Open your web browser and navigate to `http://localhost:3001` if use Parking_NV.
+## Usage
+
+- **Backend API:** 
+  - **Endpoints:** The backend provides RESTful APIs for post management, sensitive word checking, and user notifications.
+  - **Testing:** Use tools like Postman or cURL to interact with the API endpoints and test functionalities.
+
+- **Frontend:** 
+  - **Interface:** The frontend provides a user-friendly interface for reviewing posts and managing login sessions.
+  - **Access:** Once the development server is running, navigate to `http://localhost:3000` (or the configured port) to use the application.
+
+## AI Integration Details
+
+- **scikit-learn:** A machine learning library used for building and training models to detect sensitive words in posts. It provides tools for classification, regression, clustering, and more.
+
+- **joblib:** A library used to serialize and deserialize Python objects, such as machine learning models. It ensures that trained models can be saved and loaded efficiently.
+
+- **pandas:** A data manipulation and analysis library used for handling data in tabular form. It is utilized to preprocess data, manage datasets, and perform various data transformations required for model training and evaluation.
+
+## Contributing
+
+Contributions are welcome! To contribute to the project:
+1. **Fork the Repository:** Create your own fork of the repository on GitHub.
+2. **Make Changes:** Implement your changes or new features in a separate branch.
+3. **Submit a Pull Request:** Open a pull request with a detailed description of the changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
+
+## Contact
+
+For questions, feedback, or support, please reach out via email: tuanchaunguyen13@gmail.com.
 
 ---
